@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yves Delorme Sample by Masum</title>
+
+    <!-- Link to Bootstrap CSS (Choose the appropriate version) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link to jQuery (Choose the appropriate version) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <!-- Link to Bootstrap JavaScript (Choose the appropriate version) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS Loading -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"><h3>Yves Delorme</h3></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <hr class="hr">
+    <div class="container-fluid">
+       <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="images/bundle-thumbnail.jpg" alt="Athena Bedding Sets" srcset="">
+            </div>
+            <div class="col-md-6">
+                <h4>Yves Delorme</h4>
+                <h3>Athena Bed Lilen</h3>
+                <p>Organic Batiste Cotton 200 thread count Made in France.</p>
+                <strong>A pattern of scattered healing magical herbs makes for a romantic, dainty design.</strong>
+                <div class="py-2">
+                    <a class="btn btn-outline-dark" data-toggle="modal" data-target="#bundleModalCenter">collection details</a>
+                </div>
+
+  
+            <!-- Modal -->
+                <div class="modal fade" id="bundleModalCenter" tabindex="-1" role="dialog"  aria-labelledby="bundleModalCenterTitle" aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="bundleModalLongTitle">Bundle Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 my-4">
+                                        <img class="img-fluid" src="images/bundle-thumbnail.jpg" alt="Athena Bed Lilen" srcset="">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h3>Athena Bed Lilen</h3>
+                                        <p>Organic Batiste Cotton 200 thread count Made in France.</p>
+                                        <strong>A pattern of scattered healing magical herbs makes for a romantic, dainty design.</strong>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore totam rem reiciendis doloremque recusandae quod voluptate quis ducimus placeat veniam dolorem necessitatibus, cum quidem nesciunt consectetur commodi quasi. Ipsa, ullam.</p>
+                                    </div>
+                                    <p class="btn border-dark" data-dismiss="modal" aria-label="Close"> Back to Product</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Ends -->
+
+                <div class="container mt-4 p-3" style="background-color: #F9F9F9;">
+                    <div class="row">
+                        <div class="col" style="display: flex; justify-content: space-between;">
+                            <h5>Pillowcase</h5>
+                            <h5> From $100</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="pillowcase_thumbnail text-center">
+                            <img class="img-fluid" src="images/pillowcase/pillwocase-thumbnail.jpg" alt="Pillowcase" data-toggle="modal" data-target="#pillowcaseModalCenter" srcset="">
+                            <a class="btn text-dark" style="text-decoration: underline;"  data-toggle="modal" data-target="#pillowcaseModalCenter" id="">See More</a>
+                            </div>
+                            <!-- Pillowcase Modal Starts -->
+                            <div class="modal fade" id="pillowcaseModalCenter" tabindex="-1" role="dialog"  aria-labelledby="pillowcaseModalCenterTitle" aria-hidden="true">
+
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="pillowcaseModalLongTitle">Pillowcase Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body" >
+                                            <div class="container">
+                                                <div class="row" id="img_div" >
+                                                    <div class="col-md-12" >
+                                                        <img class="img-fluid" id="gallery_display"  src="images/pillowcase/pillwocase-thumbnail.jpg" alt="Pillowcase" srcset="">
+                                                    </div>
+                                                    <div class="single_item_gallery my-4">
+                                                        <img src="images/pillowcase/p-g-1.jpg" alt="pillowcase" class="img-fluid">
+                                                        <img src="images/pillowcase/p-g-2.jpg" alt="pillowcase" class="img-fluid">
+                                                        <img src="images/pillowcase/p-g-3.jpg" alt="pillowcase" class="img-fluid">
+                                                        <img src="images/pillowcase/p-g-4.jpg" alt="pillowcase" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h3>Pillowcase</h3>
+                                                        <p>Organic Batiste Cotton 200 thread count Made in France.</p>
+                                                        <strong>A pattern of scattered healing magical herbs makes for a romantic, dainty design.</strong>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore totam rem reiciendis doloremque recusandae quod voluptate quis ducimus placeat veniam dolorem necessitatibus, cum quidem nesciunt consectetur commodi quasi. Ipsa, ullam.</p>
+                                                        <ul>
+                                                            <li>Material: 100% Long Staple Combed Organic Batiste Cotton</li>
+                                                            <li>Origin: Made in France</li>
+                                                            <li>Design: Botanical Print on a White Background</li>
+                                                            <li>Reverse Side: Solid Pastel Peach Color</li>
+                                                            <li>Colors: 5 Colors in the Main Design</li>
+                                                            <li>Edge: Oxford Edge</li>
+                                                            <li>Trim: Burgundy Scalloped Trim</li>
+                                                            <li>Certification: Article certified STANDARD 100 by OEKO-TEX® - Number CQ 885/2</li>
+                                                        </ul>
+                                                        <p class="btn border-dark" data-dismiss="modal" aria-label="Close"> Back to Product</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pillowcase Modal Ends -->
+                        </div>
+                        <div class="col-md-8 mt-4">
+                           <div class="my-3">
+                            <select style="width:100%; padding: 4px;" name="" id="" placeholder="Size...">
+                                <option value="s">30 x 40cm Boudoir</option>
+                                <option value="m">40 x 76cm Standard</option>
+                                <option value="l">50 x 90cm King</option>
+                                <option value="xl">65 x 65cm Square</option>
+                            </select>
+                           </div>
+                           <div style="display: flex; justify-content: space-between;">
+                                <select style="width: 20%; padding: 3px;" name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                                <button class="btn btn-dark" style="width: 70%;">ADD TO BAG</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4 p-3" style="background-color: #F9F9F9;">
+                    <div class="row">
+                        <div class="col" style="display: flex; justify-content: space-between;">
+                            <h5>Duvet Cover</h5>
+                            <h5> From $300</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="duvet_thumbnail text-center">
+                            <img class="img-fluid" src="images/duvet-cover/duvet-cover-thubmnail.jpg" alt="Duvet Cover" data-toggle="modal" data-target="#duvetCoverModalCenter" srcset="">
+                            <a class="btn text-dark" style="text-decoration: underline;"  data-toggle="modal" data-target="#pillowcaseModalCenter" id="">See More</a>
+                            </div>
+                            <!-- Duvet Cover Modal Starts -->
+                            <div class="modal fade" id="duvetCoverModalCenter" tabindex="-1" role="dialog"  aria-labelledby="duvetCoverModalCenterTitle" aria-hidden="true">
+
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="duvetCoverModalCenterTitle">Duvet Cover Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body" >
+                                            <div class="container">
+                                                <div class="row" id="img_div" >
+                                                    <div class="col-md-12" >
+                                                        <img class="img-fluid" id="gallery_display"  src="images/duvet-cover/duvet-cover-thubmnail.jpg" alt="Duvet Cover" srcset="">
+                                                    </div>
+                                                    <div class="single_item_gallery my-4">
+                                                        <img src="images/duvet-cover/duvet-cover-thubmnail.jpg" alt="Duvet Cover" class="img-fluid">
+                                                        <img src="images/duvet-cover/d-c-1.jpg" alt="Duvet Cover" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h3>Duvet Cover</h3>
+                                                        <p>Organic Batiste Cotton 200 thread count Made in France.</p>
+                                                        <strong>A pattern of scattered healing magical herbs makes for a romantic, dainty design.</strong>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore totam rem reiciendis doloremque recusandae quod voluptate quis ducimus placeat veniam dolorem necessitatibus, cum quidem nesciunt consectetur commodi quasi. Ipsa, ullam.</p>
+                                                        <ul>
+                                                            <li>Material: 100% Long Staple Combed Organic Batiste Cotton</li>
+                                                            <li>Origin: Made in France</li>
+                                                            <li>Design: Botanical Print on a White Background</li>
+                                                            <li>Reverse Side: Solid Pastel Peach Color</li>
+                                                            <li>Colors: 5 Colors in the Main Design</li>
+                                                            <li>Edge: Oxford Edge</li>
+                                                            <li>Trim: Burgundy Scalloped Trim</li>
+                                                            <li>Certification: Article certified STANDARD 100 by OEKO-TEX® - Number CQ 885/2</li>
+                                                        </ul>
+                                                        <p class="btn border-dark" data-dismiss="modal" aria-label="Close"> Back to Product</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Duvet Cover Modal Ends -->
+                        </div>
+                        <div class="col-md-8 mt-4">
+                           <div class="my-3">
+                            <select style="width:100%; padding: 4px;" name="" id="" placeholder="Size...">
+                                <option value="s">200 x 200cm Double</option>
+                                <option value="m">240 x 220cm King</option>
+                                <option value="l">260 x 220cm Super King</option>
+                                <option value="xl">280 x 240cm Emperor</option>
+                            </select>
+                           </div>
+                           <div style="display: flex; justify-content: space-between;">
+                                <select style="width: 20%; padding: 3px;" name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                                <button class="btn btn-dark" style="width: 70%;">ADD TO BAG</button>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4 p-3" style="background-color: #F9F9F9;">
+                    <div class="row">
+                        <div class="col" style="display: flex; justify-content: space-between;">
+                            <h5>Fitted Sheet</h5>
+                            <h5> From $460</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="fitted_sheet_thumbnail text-center">
+                            <img class="img-fluid" src="images/fitted-sheet/fitted-sheet-thumbnail.jpg" alt="Fitted Sheet" data-toggle="modal" data-target="#fittedSheetModalCenter" srcset="">
+                            <a class="btn text-dark" style="text-decoration: underline;"  data-toggle="modal" data-target="#fittedSheetModalCenter" id="">See More</a>
+                            </div>
+                            <!-- Duvet Cover Modal Starts -->
+                            <div class="modal fade" id="fittedSheetModalCenter" tabindex="-1" role="dialog"  aria-labelledby="fittedSheetModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="duvetCoverModalCenterTitle">Duvet Cover Details</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body" >
+                                            <div class="container">
+                                                <div class="row" id="img_div" >
+                                                    <div class="col-md-12" >
+                                                        <img class="img-fluid" id="gallery_display"  src="images/fitted-sheet/fitted-sheet-thumbnail.jpg" alt="Fitted Sheet" srcset="">
+                                                    </div>
+                                                    <div class="single_item_gallery my-4">
+                                                        <img src="images/fitted-sheet/fitted-sheet-thumbnail.jpg" alt="Fitted Sheet" class="img-fluid">
+                                                        <img src="images/fitted-sheet/f-s-1.jpg" alt="Fitted Sheet" class="img-fluid">
+                                                        <img src="images/fitted-sheet/f-s-2.jpg" alt="Fitted Sheet" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h3>Fitted Sheet</h3>
+                                                        <p>Organic Batiste Cotton 200 thread count Made in France.</p>
+                                                        <strong>A pattern of scattered healing magical herbs makes for a romantic, dainty design.</strong>
+                                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore totam rem reiciendis doloremque recusandae quod voluptate quis ducimus placeat veniam dolorem necessitatibus, cum quidem nesciunt consectetur commodi quasi. Ipsa, ullam.</p>
+                                                        <ul>
+                                                            <li>Material: 100% Long Staple Combed Organic Batiste Cotton</li>
+                                                            <li>Origin: Made in France</li>
+                                                            <li>Design: Botanical Print on a White Background</li>
+                                                            <li>Reverse Side: Solid Pastel Peach Color</li>
+                                                            <li>Colors: 5 Colors in the Main Design</li>
+                                                            <li>Edge: Oxford Edge</li>
+                                                            <li>Trim: Burgundy Scalloped Trim</li>
+                                                            <li>Certification: Article certified STANDARD 100 by OEKO-TEX® - Number CQ 885/2</li>
+                                                        </ul>
+                                                        <p class="btn border-dark" data-dismiss="modal" aria-label="Close"> Back to Product</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Duvet Cover Modal Ends -->
+                        </div>
+                        <div class="col-md-8 mt-4">
+                           <div class="my-3">
+                            <select style="width:100%; padding: 4px;" name="" id="" placeholder="Size...">
+                                <option value="s">200 x 200cm Double</option>
+                                <option value="m">240 x 220cm King</option>
+                                <option value="l">260 x 220cm Super King</option>
+                                <option value="xl">280 x 240cm Emperor</option>
+                            </select>
+                           </div>
+                           <div style="display: flex; justify-content: space-between;">
+                                <select style="width: 20%; padding: 3px;" name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                                <button class="btn btn-dark" style="width: 70%;">ADD TO BAG</button>
+                           </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+       </div>
+    </div>
+
+    <!-- jQuery script for interactivity -->
+   <script src="app.js"></script>
+</body>
+</html>

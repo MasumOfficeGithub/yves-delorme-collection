@@ -1,0 +1,16 @@
+
+/*Pillowcase Single Block*/
+.pillowcase_thumbnail, .duvet_thumbnail, .fitted_sheet_thumbnail{
+    cursor: pointer;
+}
+
+
+/*Pillowcase Modal Gellery*/
+
+.single_item_gallery{
+    border-radius: 1px solid #000;
+}
+.single_item_gallery img{
+   width: 50px!important;
+   cursor: pointer;
+}

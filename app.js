@@ -1,9 +1,7 @@
 (function($){
 
 // Main Collection Color Div
-
 var color_div = $('.singel_color_div');
-
 color_div.each(function (){
     $(this).on('click mouseover', function(){
         var color_name = $(this).data('color');
@@ -15,10 +13,9 @@ color_div.each(function (){
 });
 
 //Block Modal Images Showing
-
 var single_img = $('.single_item_gallery img');
 single_img.each(function () {
-    $(single_img).on('click', single_img, function (){
+    $(this).on('click', function (){
         var src = $(this).attr('src');
         var gallery_display = $(this).closest('#img_div').find('#gallery_display');
             gallery_display.attr('src', src);
@@ -28,20 +25,18 @@ single_img.each(function () {
 
 
 // Block Color Swtiches Div
-
 var block_color_swtiches_div = $('.block_color_swtiches_div');
 var color_swtiches = $('.color_swtiches');
 color_swtiches.each(function () {
-    $(color_swtiches).on('click', function (){
+    $(this).on('click', function (){
        $(this).closest('div').find(block_color_swtiches_div).toggle();
     });
 });
 
 
+
 // Block Color Swtiches
-
 var color_div = $('.singel_color_div');
-
 color_div.each(function (){
     $(this).on('click mouseover', function(){
         var color_name = $(this).data('color');

@@ -1,6 +1,6 @@
 
 /*Pillowcase Single Block*/
-.pillowcase_thumbnail, .duvet_thumbnail, .fitted_sheet_thumbnail, .singel_color_div{
+.pillowcase_thumbnail, .duvet_thumbnail, .fitted_sheet_thumbnail, .singel_color_div, .color_swtiches{
     cursor: pointer;
 }
 
@@ -20,4 +20,14 @@
     height: 30px; 
     margin-left: 10px; 
     border-radius: 50%;
+}
+
+
+/*Color Swtiches*/
+
+.color_swtiches{
+    text-decoration: underline;
+}
+.block_color_swtiches_div{
+    display: none;
 }

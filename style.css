@@ -1,6 +1,6 @@
 
 /*Pillowcase Single Block*/
-.pillowcase_thumbnail, .duvet_thumbnail, .fitted_sheet_thumbnail, .singel_color_div, .color_swtiches{
+.pillowcase_thumbnail, .duvet_thumbnail, .fitted_sheet_thumbnail, .singel_color_div, .main_color_div, .color_swtiches{
     cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
    cursor: pointer;
 }
 
-.singel_color_div{
+.main_color_div, .singel_color_div{
     width: 30px; 
     height: 30px; 
     margin-left: 10px; 

@@ -32,11 +32,17 @@ color_div.each(function (){
          var fitted_thumb = $('.fitted_thumb');
          fitted_thumb.attr('src', img_fitted);
 
-         //Pillow Gallery Fetching
+         
+         // Passing Modal Gallery Images for Pillowcase, Duvet Cover, Fitted Sheet
 
          var pillow_gallery_array = $(this).data('pillow-array');
-
          pillow_thumb.attr('data-gallery-url', pillow_gallery_array);
+
+         var duvet_gallery_array = $(this).data('duvet-array');
+         duvet_thumb.attr('data-gallery-url', duvet_gallery_array);
+
+         var fitted_gallery_array = $(this).data('fitted-array');
+         fitted_thumb.attr('data-gallery-url', fitted_gallery_array);
                
     });
 
@@ -98,13 +104,13 @@ single_img.each(function () {
 
 
 // Block Color Swtiches Div
-var block_color_swtiches_div = $('.block_color_swtiches_div');
-var color_swtiches = $('.color_swtiches');
-color_swtiches.each(function () {
-    $(this).on('click', function (){
-       $(this).closest('div').find(block_color_swtiches_div).toggle();
-    });
-});
+// var block_color_swtiches_div = $('.block_color_swtiches_div');
+// var color_swtiches = $('.color_swtiches');
+// color_swtiches.each(function () {
+//     $(this).on('click', function (){
+//        $(this).closest('div').find(block_color_swtiches_div).toggle();
+//     });
+// });
 
 
 

@@ -36,6 +36,7 @@ color_div.each(function (){
          // Passing Modal Gallery Images for Pillowcase, Duvet Cover, Fitted Sheet
 
          var pillow_gallery_array = $(this).data('pillow-array');
+        
          pillow_thumb.attr('data-gallery-url', pillow_gallery_array);
 
          var duvet_gallery_array = $(this).data('duvet-array');
@@ -49,31 +50,63 @@ color_div.each(function (){
 });
 
 //Passing URLs to Madal
-var modalButton = $('.class_for_modal_url');
+// var modalButton = $('.class_for_modal_url');
 
-modalButton.on('click', function(){
+// modalButton.on('click', function(){
+//     var url = $(this).attr('src');
+//     $(this).parent().next('.modal').find('#gallery_display').attr('src', url);
+   
+//     var raw_gallery_urls = $(this).data('gallery-url');
+//     var gallery_urls = JSON.parse(raw_gallery_urls.replace(/'/g, '"'));
+//     console.log(gallery_urls)
+  
+//     var single_item_gallery = $(this).parent().next('.modal').find('.single_item_gallery');
+//     single_item_gallery.empty();
+//         $.each(gallery_urls, function(index, url) {
+//             const img = $('<img>').attr('src', url).attr('class', 'img-fluid').css('margin', '10px');
+//             single_item_gallery.append(img);
+
+//             $(img).on('click', function (){
+//                 var src = $(this).attr('src');
+//                 var gallery_display = $(this).closest('#img_div').find('#gallery_display');
+//                     gallery_display.attr('src', src);   
+//             });
+//         });
+
+//     });
+
+var modalButton = $('.class_for_modal_url');
+var raw_gallery_urls = null; // Initialize raw_gallery_urls
+var newRawGalleryUrls = null; // Initialize newRawGalleryUrls
+
+modalButton.on('click', function () {
     var url = $(this).attr('src');
     $(this).parent().next('.modal').find('#gallery_display').attr('src', url);
 
-    var raw_gallery_urls = $(this).data('gallery-url');
-    var gallery_urls = JSON.parse(raw_gallery_urls.replace(/'/g, '"'));
-    console.log(gallery_urls)
-  
+    // Check if newRawGalleryUrls is defined
+    if (typeof newRawGalleryUrls !== 'undefined' && newRawGalleryUrls !== null && raw_gallery_urls === newRawGalleryUrls) {
+        raw_gallery_urls = newRawGalleryUrls; // Update raw_gallery_urls
+    }
+
+    newRawGalleryUrls = $(this).data('gallery-url');
+    var gallery_urls = JSON.parse(newRawGalleryUrls.replace(/'/g, '"'));
+
     var single_item_gallery = $(this).parent().next('.modal').find('.single_item_gallery');
     single_item_gallery.empty();
-        $.each(gallery_urls, function(index, url) {
-            const img = $('<img>').attr('src', url).attr('class', 'img-fluid').css('margin', '10px');
-            single_item_gallery.append(img);
+    $.each(gallery_urls, function (index, url) {
+        const img = $('<img>').attr('src', url).attr('class', 'img-fluid').css('margin', '10px');
+        single_item_gallery.append(img);
 
-            $(img).on('click', function (){
-                var src = $(this).attr('src');
-                var gallery_display = $(this).closest('#img_div').find('#gallery_display');
-                    gallery_display.attr('src', src);
-               
-            });
+        $(img).on('click', function () {
+            var src = $(this).attr('src');
+            var gallery_display = $(this).closest('.modal').find('#gallery_display');
+            gallery_display.attr('src', src);
         });
-
     });
+});
+
+
+
 
 // Mian Color Buttons Inteaction in 3 space ( Pillwocase, Duvet Cover, Fitted Sheet)
 var color_div = $('.singel_color_div');

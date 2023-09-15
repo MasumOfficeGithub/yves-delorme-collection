@@ -3,7 +3,7 @@
 // Main Collection Color Div
 var color_div = $('.main_color_div');
 color_div.each(function (){
-    $(this).on('click mouseover', function(){
+    $(this).on('click mouseover change', function(){
 
         //Color Swtiches
         var color_name = $(this).data('color');
@@ -60,7 +60,7 @@ modalButton.on('click', function(){
     console.log(gallery_urls)
   
     var single_item_gallery = $(this).parent().next('.modal').find('.single_item_gallery');
-
+    single_item_gallery.empty();
         $.each(gallery_urls, function(index, url) {
             const img = $('<img>').attr('src', url).attr('class', 'img-fluid').css('margin', '10px');
             single_item_gallery.append(img);

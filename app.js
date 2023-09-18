@@ -58,7 +58,6 @@ modalButton.on('click', function(){
    
     var raw_gallery_urls = $(this).data('gallery-url');
     var gallery_urls = JSON.parse(raw_gallery_urls.replace(/'/g, '"'));
-    alert(gallery_urls)
   
     var single_item_gallery = $(this).parent().next('.modal').find('.single_item_gallery');
     single_item_gallery.find('img').remove();
